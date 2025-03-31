@@ -1,57 +1,114 @@
-h1.title {
-    color:brown
-}
-h2.title {
-    front-size: medium;
-    color: cadetblue;
-    front-family:
-}
-#main {
-    background-color:
-    wight: 600px;
-    height: 200px;
-    front-family:
-    front-size: small;
-}
-/* Change the background color of the table to golden */
-table {
-    background-color: #FFD700; /* Golden color */
-    width: 100%;
-    border-collapse: collapse; /* Makes the table borders look neat */
+/* ==========================
+   General Styling
+========================== */
+body {
+    background-color: #f4f4f4; /* Light grey background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style for table headers */
-th {
-    font-family: 'Arial', sans-serif; /* Set font for the title */
-    font-weight: bold;
-    color: #fff; /* White text color for the titles */
-    padding: 10px;
+/* ==========================
+   Navigation Bar
+========================== */
+.navbar {
+    background-color: #FFD700; /* Golden color */
+    padding: 10px 0;
     text-align: center;
 }
 
-/* Style for table data */
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #daa520; /* Darker golden shade */
+    color: white;
+}
+
+/* ==========================
+   Table Styling
+========================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFD700; /* Golden background */
+}
+
+th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
 td {
     padding: 10px;
     text-align: center;
 }
 
-/* Change the color of links inside the table */
-a {
-    color: #B22222; /* Dark red for links */
-    text-decoration: none; /* Remove underline */
-}
-
-a:hover {
-    color: #FF6347; /* Light red when hovered */
-}
-
-/* Customize list shape */
+/* ==========================
+   Lists
+========================== */
 ul {
-    list-style-type: square; /* Change the bullet to square */
-    padding-left: 20px; /* Add some space for the list */
+    list-style-type: square;
+    padding-left: 20px;
 }
 
 ol {
-    list-style-type: decimal; /* Number the list */
+    list-style-type: decimal;
     padding-left: 20px;
+}
+
+/* ==========================
+   Buttons
+========================== */
+.button {
+    background-color: #B22222; /* Dark red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #FF6347; /* Lighter red */
+}
+
+/* ==========================
+   Responsive Design (Flexbox)
+========================== */
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flexbox-element {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .flexbox-container {
+        flex-direction: column;
+    }
+}
+
+/* ==========================
+   Footer Styling
+========================== */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
 }
