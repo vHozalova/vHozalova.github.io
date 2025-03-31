@@ -16,27 +16,40 @@ body {
    Navigation Bar
 ========================== */
 .navbar {
-    background-color: #FFD700; /* Golden navigation bar */
+    background-color: #FFD700; /* Golden background */
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar a {
-    color: black;
-    text-decoration: none;
-    padding: 12px 18px;
-    display: inline-block;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center items */
 }
 
-.navbar a:hover {
-    background-color: #daa520; /* Darker golden shade */
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: 'Sriracha', cursive;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #DAA520; /* Darker golden shade */
     color: white;
     border-radius: 5px;
 }
-
 /* ==========================
    Table Styling
 ========================== */
