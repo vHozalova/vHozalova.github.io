@@ -13,3 +13,45 @@ h2.title {
     front-family:
     front-size: small;
 }
+/* Change the background color of the table to golden */
+table {
+    background-color: #FFD700; /* Golden color */
+    width: 100%;
+    border-collapse: collapse; /* Makes the table borders look neat */
+}
+
+/* Style for table headers */
+th {
+    font-family: 'Arial', sans-serif; /* Set font for the title */
+    font-weight: bold;
+    color: #fff; /* White text color for the titles */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for table data */
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Change the color of links inside the table */
+a {
+    color: #B22222; /* Dark red for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: #FF6347; /* Light red when hovered */
+}
+
+/* Customize list shape */
+ul {
+    list-style-type: square; /* Change the bullet to square */
+    padding-left: 20px; /* Add some space for the list */
+}
+
+ol {
+    list-style-type: decimal; /* Number the list */
+    padding-left: 20px;
+}
