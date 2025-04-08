@@ -4,7 +4,7 @@
 <head>
     <title>LAB1</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./script/script.js"></script>
+    <script defer src="./script/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 </head>
 
@@ -25,7 +25,6 @@
         On the low end for a Goldendoodle, you can expect to pay about $2,000 or as high as $4000 when you opt for a reputable breeder who is knowledgeable about the breed and its health, or when you opt for a puppy with a championship bloodline.
     </p>
 
-    <!-- Alert Button after Great Price section -->
     <button id="alertMe">Buy Me Now</button>
 
     <h3>Low-Shedding</h3>
@@ -33,31 +32,26 @@
         While often touted as "hypoallergenic," Goldendoodles are not truly allergen-free, but they are low-shedding and can be a good option for people with allergies due to their coat type.
     </p>
 
-    <!-- Image -->
     <div>
         <img src="apricot GD.jpeg" alt="Apricot Golden Doodle">
     </div>
 
     <p>The <span>Goldendoodle</span> is a friendly, intelligent, and low-shedding hybrid breed, combining the best traits of the Golden Retriever and Poodle.</p>
 
-    <!-- Unordered List -->
     <ul>
         <li>Goldendoodle Characteristics – Friendly, intelligent, and hypoallergenic traits.</li>
         <li>Care and Grooming – Regular brushing, exercise needs, and health considerations.</li>
         <li>Training and Temperament – Easy to train, social behavior, and best practices.</li>
     </ul>
 
-    <!-- Ordered List -->
     <ol>
         <li>History of the Goldendoodle – Origin, purpose, and breed development.</li>
         <li>Goldendoodle Size Variations – Mini, medium, and standard sizes.</li>
         <li>Best Diet for Goldendoodles – Nutritional needs, recommended food, and feeding schedule.</li>
     </ol>
 
-    <!-- Link to Video -->
     <a href="https://youtu.be/aksXrVmN2co?si=95mC8cX58HB-RCki" target="_blank">Watch this video</a>
 
-    <!-- Table -->
     <table border="1">
         <tr>
             <th>Category</th>
@@ -79,57 +73,12 @@
 
     <h1>JavaScript Task Demo</h1>
 
-    <!-- Incrementing Button -->
     <button id="buttonCounter">Change the Colour and Count It</button>
     <p id="counter">Count: 0</p>
 
-    <!-- Container for Loop Output -->
     <div id="container"></div>
 
-    <!-- Hover Button at the end of the page -->
-    <button id="hoverButton" onclick="window.location.href='contact.html'">Contact Us</button>
-
-    <!-- Script Section -->
-    <script>
-        // Alert Button
-        document.getElementById('alertMe').onclick = function () {
-            alert('Preorder Golden Doodle');
-        };
-
-        // Hover Button style change on mouse events
-        const hoverButton = document.getElementById('hoverButton');
-        hoverButton.onmouseover = function () {
-            hoverButton.style.background = 'lightgreen';
-        };
-        hoverButton.onmouseleave = function () {
-            hoverButton.style.background = 'lightblue';
-        };
-
-        // Incrementing Counter Button with Color Change
-        let count = 0;
-        document.getElementById('buttonCounter').onclick = function () {
-            count += 1;
-            const counterText = document.getElementById('counter');
-            counterText.innerHTML = 'Count: ' + count;
-
-            if (count % 2 === 0) {
-                counterText.style.color = 'blue';
-            } else {
-                counterText.style.color = 'red';
-            }
-        };
-
-        // Loop Output with Different Colors
-        const container = document.getElementById('container');
-        const colors = ['red', 'blue', 'green', 'purple', 'orange', 'teal', 'brown'];
-
-        for (let i = 0; i < 7; i++) {
-            const message = document.createElement('p');
-            message.textContent = 'Golden Doodle dog is awesome';
-            message.style.color = colors[i];
-            container.appendChild(message);
-        }
-    </script>
+    <button id="hoverButton">Contact Us</button>
 
 </body>
 

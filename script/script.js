@@ -1,38 +1,39 @@
-// Alert Button
-document.getElementById('alertMe').onclick = function() {
-    alert('Hello world!');
-};
+// Alert Button Action
+document.getElementById('alertMe').addEventListener('click', function () {
+    alert('Preorder Golden Doodle');
+});
 
-// Hover Button
+// Hover Button Action
 const hoverButton = document.getElementById('hoverButton');
+hoverButton.addEventListener('click', function () {
+    window.location.href = 'contact.html';
+});
+hoverButton.addEventListener('mouseover', function () {
+    hoverButton.style.backgroundColor = 'lightgreen';
+});
+hoverButton.addEventListener('mouseleave', function () {
+    hoverButton.style.backgroundColor = 'lightblue';
+});
 
-hoverButton.onmouseover = function() {
-    hoverButton.style.background = 'lightblue';
-};
-
-hoverButton.onmouseleave = function() {
-    hoverButton.style.background = 'lightgreen';
-};
-
-// Incrementing Button with If-Else Color Change
+// Incrementing Counter Button with Color Change
 let count = 0;
-const counterParagraph = document.getElementById('counter');
-
-document.getElementById('buttonCounter').onclick = function() {
+document.getElementById('buttonCounter').addEventListener('click', function () {
     count += 1;
-    counterParagraph.innerHTML = 'Count: ' + count;
+    const counterDisplay = document.getElementById('counter');
+    counterDisplay.textContent = 'Count: ' + count;
 
-    if (count % 2 === 0) {
-        counterParagraph.style.color = 'blue';
-    } else {
-        counterParagraph.style.color = 'red';
-    }
-};
+    // Random color generator for fun
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    counterDisplay.style.color = randomColor;
+});
 
-// For Loop
+// Loop - "Golden Doodle dog is awesome" 7 times with different colors
 const container = document.getElementById('container');
+const colors = ['red', 'blue', 'green', 'purple', 'orange', 'teal', 'magenta'];
 
-for (let i = 1; i <= 5; i++) {
-    container.append('This is message number ' + i);
-    container.append(document.createElement('br'));
+for (let i = 0; i < 7; i++) {
+    const para = document.createElement('p');
+    para.textContent = 'Golden Doodle dog is awesome';
+    para.style.color = colors[i % colors.length];
+    container.appendChild(para);
 }
