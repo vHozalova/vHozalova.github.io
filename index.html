@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-
-<title>LAB1</title>
-<link  rel="stylesheet" href="./styles/styles.css"> 
-<script src=".script/script.js"></script>
-
-<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>LAB1</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 </head>
 
-<style>
-    
-</style>
-
 <body>
+
+    <!-- Navigation -->
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -24,102 +19,61 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    
 
-    <!-- Using the headlines -->
-    <h1>Golden  Doodle - why  it is a great choice to buy</h1>
-    <h2>Great price  
-        <script>
-             // Alert Button
-        document.getElementById('alertMe').onclick = function () {
-            alert('Preorder Golden Doodle');
-        };
-        </script>
-        </h2> 
-    <p id="the first paragraph">On the low end for a Goldendoodle, you can expect to pay about $2,000 or as high as $4000 when you opt for a reputable breeder who is knowledgeable about the breed and its health, or when you opt for a puppy with a championship bloodline</p>
+    <!-- Main Content -->
+    <h1>Golden Doodle - Why It Is a Great Choice to Buy</h1>
+    <h2>Great Price</h2>
+    <p id="first-paragraph">On the low end for a Goldendoodle, you can expect to pay about $2,000 or as high as $4000 when you opt for a reputable breeder who is knowledgeable about the breed and its health, or when you opt for a puppy with a championship bloodline.</p>
+
     <h3>Low-Shedding</h3>
-    <p>While often touted as "hypoallergenic," Goldendoodles are not truly allergen-free, but they are low-shedding and can be a good option for people with allergies due to their coat type. 
-    </p>
-   
- 
-</body>
+    <p>While often touted as "hypoallergenic," Goldendoodles are not truly allergen-free, but they are low-shedding and can be a good option for people with allergies due to their coat type.</p>
 
-<!-- Using image -->
-<div ><img src="apricot GD.jpeg" alt="Apricot Golden Doodle"></dive>
+    <!-- Image -->
+    <div>
+        <img src="apricot GD.jpeg" alt="Apricot Golden Doodle">
+    </div>
 
-    <!-- Using inlines -->
-   <p>The<span > Goldendoodle </span>is a friendly, intelligent, and low-shedding hybrid breed, combining the best traits of the Golden Retriever and Poodle</p> 
-   
-   <!-- Using unorder list -->
-   <ul>
+    <!-- Inline Text -->
+    <p>The <span>Goldendoodle</span> is a friendly, intelligent, and low-shedding hybrid breed, combining the best traits of the Golden Retriever and Poodle.</p>
 
-        <li> Goldendoodle Characteristics – Friendly, intelligent, and hypoallergenic traits.
-        </ul>
-        
-        <li>Care and Grooming – Regular brushing, exercise needs, and health considerations.
-        </ul>
-        
-        <li>Training and Temperament – Easy to train, social behavior, and best practices.</ul>
-        
-        </ul>
+    <!-- Unordered List -->
+    <ul>
+        <li>Goldendoodle Characteristics – Friendly, intelligent, and hypoallergenic traits.</li>
+        <li>Care and Grooming – Regular brushing, exercise needs, and health considerations.</li>
+        <li>Training and Temperament – Easy to train, social behavior, and best practices.</li>
+    </ul>
 
-        <!-- Order list -->
-        <ul>
+    <!-- Ordered List (use <ol> for ordered lists) -->
+    <ol>
+        <li>History of the Goldendoodle – Origin, purpose, and breed development.</li>
+        <li>Goldendoodle Size Variations – Mini, medium, and standard sizes.</li>
+        <li>Best Diet for Goldendoodles – Nutritional needs, recommended food, and feeding schedule.</li>
+    </ol>
 
-            <li>History of the Goldendoodle – Origin, purpose, and breed development.
-            </ul>
-            
-            <li>Goldendoodle Size Variations – Mini, medium, and standard sizes.</ul>
-            
-            <li>Best Diet for Goldendoodles – Nutritional needs, recommended food, and feeding schedule.</ul>
-            
-            </ul>
-            
-            <!-- Link -->
-            <a href="https://youtu.be/aksXrVmN2co?si=95mC8cX58HB-RCki" target="_blank">Watch this video</a>
+    <!-- External Link -->
+    <a href="https://youtu.be/aksXrVmN2co?si=95mC8cX58HB-RCki" target="_blank">Watch this video</a>
 
-<!-- Table -->
-
-<table>
-
-    <tr>
-    
-    <td>Category</td>
-    
-    <td>Details</td>
-    
-    
-    </tr>
-    <tr>
-    
-        <td>Origin</td>
-        
-        <td>A crossbreed between a Golden Retriever and a Poodle
-        </td>
-        
-        
+    <!-- Table -->
+    <table border="1">
+        <tr>
+            <th>Category</th>
+            <th>Details</th>
         </tr>
         <tr>
-    
+            <td>Origin</td>
+            <td>A crossbreed between a Golden Retriever and a Poodle</td>
+        </tr>
+        <tr>
             <td>Allergy-Friendly</td>
-            
-            <td>Often considered hypoallergenic due to low shedding
-            </td>
-            
-            
-            </tr>
-            <tr>
-    
-                <td>Ideal Living Space</td>
-                
-                <td>Adapts well to apartments or houses with yards</td>
-                
-                
-                </tr>
-  
-    
+            <td>Often considered hypoallergenic due to low shedding</td>
+        </tr>
+        <tr>
+            <td>Ideal Living Space</td>
+            <td>Adapts well to apartments or houses with yards</td>
+        </tr>
     </table>
-    
+
+    <!-- JavaScript Task Demo -->
     <h1>JavaScript Task Demo</h1>
 
     <!-- Alert Button -->
@@ -135,8 +89,12 @@
     <!-- Container for Loop Output -->
     <div id="container"></div>
 
+    <!-- Scripts at the end of body for better performance -->
     <script>
-       
+        // Alert Button
+        document.getElementById('alertMe').onclick = function () {
+            alert('Preorder Golden Doodle');
+        };
 
         // Hover Button
         const hoverButton = document.getElementById('hoverButton');
@@ -150,11 +108,11 @@
         // Incrementing Button with If-Else for colour change
         let count = 0;
         document.getElementById('buttonCounter').onclick = function () {
-            count = count + 1;
+            count++;
             const counterText = document.getElementById('counter');
             counterText.innerHTML = 'Count: ' + count;
 
-            if (count % 2 == 0) {
+            if (count % 2 === 0) {
                 counterText.style.color = 'blue';
             } else {
                 counterText.style.color = 'red';
@@ -163,14 +121,13 @@
 
         // For Loop to print messages
         const container = document.getElementById('container');
-        for (let i = 1; i <= 5; i = i + 1) {
-            container.append('Message number ' + i + ' \n');
+        for (let i = 1; i <= 5; i++) {
+            container.append('Message number ' + i);
             const lineBreak = document.createElement('br');
             container.appendChild(lineBreak);
         }
     </script>
-    <!-- End -->                
 
+</body>
 
 </html>
-
