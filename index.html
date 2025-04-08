@@ -29,7 +29,7 @@
     <!-- Using the headlines -->
     <h1>Golden  Doodle - why  it is a great choice to buy</h1>
     <h2>Great price  
-        <button onclick="alert"(' hello you cliked me' )"">BUY NOW </button></h2> 
+        </h2> 
     <p id="the first paragraph">On the low end for a Goldendoodle, you can expect to pay about $2,000 or as high as $4000 when you opt for a reputable breeder who is knowledgeable about the breed and its health, or when you opt for a puppy with a championship bloodline</p>
     <h3>Low-Shedding</h3>
     <p>While often touted as "hypoallergenic," Goldendoodles are not truly allergen-free, but they are low-shedding and can be a good option for people with allergies due to their coat type. 
@@ -114,7 +114,59 @@
     
     </table>
     
-<!-- End -->                
+    <h1>JavaScript Task Demo</h1>
+
+    <!-- Alert Button -->
+    <button id="alertMe">Click for Alert</button>
+
+    <!-- Hover Button -->
+    <button id="hoverButton">Hover Over Me</button>
+
+    <!-- Incrementing Button -->
+    <button id="buttonCounter">Increment Counter</button>
+    <p id="counter">Count: 0</p>
+
+    <!-- Container for Loop Output -->
+    <div id="container"></div>
+
+    <script>
+        // Alert Button
+        document.getElementById('alertMe').onclick = function () {
+            alert('Hello world!');
+        };
+
+        // Hover Button
+        const hoverButton = document.getElementById('hoverButton');
+        hoverButton.onmouseover = function () {
+            hoverButton.style.background = 'lightgreen';
+        };
+        hoverButton.onmouseleave = function () {
+            hoverButton.style.background = 'lightblue';
+        };
+
+        // Incrementing Button with If-Else for colour change
+        let count = 0;
+        document.getElementById('buttonCounter').onclick = function () {
+            count = count + 1;
+            const counterText = document.getElementById('counter');
+            counterText.innerHTML = 'Count: ' + count;
+
+            if (count % 2 == 0) {
+                counterText.style.color = 'blue';
+            } else {
+                counterText.style.color = 'red';
+            }
+        };
+
+        // For Loop to print messages
+        const container = document.getElementById('container');
+        for (let i = 1; i <= 5; i = i + 1) {
+            container.append('Message number ' + i + ' \n');
+            const lineBreak = document.createElement('br');
+            container.appendChild(lineBreak);
+        }
+    </script>
+    <!-- End -->                
 
 
 </html>
